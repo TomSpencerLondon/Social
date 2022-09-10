@@ -1,0 +1,45 @@
+== Spring Social
+=== What is Social?
+
+Social is a demo application of how to build authentication and authorization into your Spring Boot application with an
+OAuth2 identity provider through GitHub.
+
+image::https://media.giphy.com/media/dR0RfrwNhx4qqTmOj0/giphy.gif[]
+
+=== Getting Started
+
+=== Prerequisites
+* installed - Git
+* installed  - Java 11
+* OAuth2 Client or App ID and Secret from the OAuth2 identity provider you are going to use for login. For example GitHub.
+
+==== Creating OAuth2 identity provider app
+
+Let's take GitHub as a demo identity provider
+
+Go to https://github.com/settings/apps to create a new app and get Client ID and Client secret after creation.
+
+It's also important to provide "User authorization callback URL" during app creation, so that GitHub will redirect to our application after a user authorizes.
+For the demo purposes set it to `http://localhost:8080/login/oauth2/code/github`
+
+
+==== Start the application
+
+Clone the repository
+
+`git clone git@github.com:TomSpencerLondon/Social.git`
+
+After cloning the repository go to `src/main/resources/application-local.yml` and update you app GitHub ID and secret
+
+```
+github:
+    client-id: <GITHUB APP ID>
+    client-secret: <GITHUB APP SECRET>
+```
+On IntelliJ you can change the run configuration to use local environment:
+
+image::https://user-images.githubusercontent.com/27693622/189482935-5c0f22ef-0101-4094-99fd-4ee855887a44.png[]
+
+After go to http://localhost:8080
+
+

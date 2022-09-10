@@ -1,0 +1,18 @@
+server:
+  port: 8080
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            client-id: Iv1.f11c729451ad8f69
+            client-secret: e8e282e2c4100a45352f4cb8b0f9a4aabd80f7e8
+  thymeleaf:
+    cache: false
+    prefix: file:src/main/resources/templates/
+logging:
+  level:
+    org:
+      springframework:
+        INFO
