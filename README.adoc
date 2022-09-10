@@ -4,7 +4,7 @@
 Social is a demo application of how to build authentication and authorization into your Spring Boot application with an
 OAuth2 identity provider through GitHub.
 
-image::https://media.giphy.com/media/dR0RfrwNhx4qqTmOj0/giphy.gif[]
+image::https://media.giphy.com/media/2Hgkc8IRQUtxAIfmbp/giphy.gif[]
 
 === Getting Started
 
