@@ -7,7 +7,7 @@ spring:
         registration:
           github:
             client-id: Iv1.f11c729451ad8f69
-            client-secret: e8e282e2c4100a45352f4cb8b0f9a4aabd80f7e8
+            client-secret: 24ecda2dc87d261cdbdbdab82baa0833fc3da1c0
   thymeleaf:
     cache: false
     prefix: file:src/main/resources/templates/
